@@ -1,0 +1,133 @@
+.MyDatePicker-al {
+    position: relative;
+}
+
+.MyDatePicker-al .input-box {
+    height: 30px;
+    padding: 0 20px;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.MyDatePicker-al .input-box .placeholder {
+    color: #b9b9b9;
+}
+
+.MyDatePicker-al .datepicker-body {
+    display: flex;
+    flex-direction: column;
+    height: 320px;
+    position: absolute;
+    width: 280px;
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+    left: 0;
+    top: 35px;
+}
+
+.MyDatePicker-al .datepicker-body .header {
+    display: flex;
+    align-items: center;
+}
+
+.MyDatePicker-al .datepicker-body .header .day-title {
+    width: 40px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.MyDatePicker-al .datepicker-body .days-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.MyDatePicker-al .datepicker-body .days-list .day-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.MyDatePicker-al .datepicker-body .days-list .day-item.active {
+    color: #fff;
+    background-color: rgb(245, 124, 0) !important;
+    border-radius: 100%;
+}
+
+.MyDatePicker-al .datepicker-body .days-list .day-item.disabled {
+    color: #b9b9b9;
+    pointer-events: none;
+}
+
+.MyDatePicker-al .datepicker-body .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.MyDatePicker-al .datepicker-body .navigation button span::after {
+    position: absolute;
+    top: 0px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    border-width: 1.5px 0px 0px 1.5px;
+    content: "";
+    transform: rotate(-45deg);
+    color: #b9b9b9;
+    transition: .4s all;
+}
+
+.MyDatePicker-al .datepicker-body .navigation button span.next::after {
+    transform: rotate(135deg);
+}
+
+.MyDatePicker-al .datepicker-body .navigation button span {
+    position: relative;
+    display: block;
+}
+
+.MyDatePicker-al .datepicker-body .navigation button {
+    all: unset;
+    position: relative;
+    width: 55px;
+    text-align: center;
+    height: 45px;
+    cursor: pointer;
+}
+
+.MyDatePicker-al .datepicker-body .navigation button:hover span::after {
+    color: #131313;
+}
+
+.MyDatePicker-al .datepicker-body .navigation button span:first-child {
+    margin-left: 15px;
+}
+
+.MyDatePicker-al .datepicker-body .navigation .Date-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+}
+
+.MyDatePicker-al .datepicker-body .navigation .Date-detail .year {
+    font-size: 20px;
+    font-weight: 500;
+}
